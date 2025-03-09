@@ -1,9 +1,9 @@
 // _app.tsx
 import type { AppProps } from 'next/app';
-import { CarritoProvider } from '../context/CarritoContext';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import '../styles/globals.css';
+import { CarritoProvider } from '../src/context/CarritoContext';
+import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
+import '../src/styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

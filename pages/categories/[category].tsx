@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import Producto from '../../components/Producto';
+import Producto from '../../src/components/Producto';
 
 const productos: Producto[] = [
   // Pollo

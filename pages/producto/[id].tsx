@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import type { Producto } from '../../types';
-import { useCarrito } from '../../context/CarritoContext';
+import type { Producto } from '../../src/types';
+import { useCarrito } from '../../src/context/CarritoContext';
 
 const productos: Producto[] = [
   // Pollo

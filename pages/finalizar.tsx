@@ -1,7 +1,7 @@
 // pages/finalizar.tsx
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { useCarrito } from '../context/CarritoContext';
+import { useCarrito } from '../src/context/CarritoContext';
 import Image from 'next/image';
 
 const Finalizar: React.FC = () => {
