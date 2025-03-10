@@ -7,7 +7,7 @@ const productos: Producto[] = [
   {
     id: 0,
     nombre: 'Patas de Pollo',
-    imagen: '/images/chicken/pata.png',
+    imagen: '.next/images/chicken/pata.png',
     precioPorKilo: 8.99,
     category: 'pollo',
   },
