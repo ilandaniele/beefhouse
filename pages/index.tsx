@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image'; // Importar el componente Image de Next.js
 
 const categories = [
   { nombre: 'Pollo', imagen: '/images/chicken/pollo.jpg' },
@@ -56,9 +57,11 @@ const Home: React.FC = () => {
                 marginBottom: '8px',
               }}
             >
-              <img
+              <Image
                 src={categoria.imagen}
                 alt={categoria.nombre}
+                width={200} // Ancho de la imagen
+                height={150} // Alto de la imagen
                 style={{
                   width: '100%',
                   height: '100%',

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image'; // Importar el componente Image de Next.js
 import type { Producto } from '../../src/types';
 import { useCarrito } from '../../src/context/CarritoContext';
 
@@ -101,10 +102,12 @@ const ProductoPage: React.FC = () => {
   return (
     <div style={{ padding: '16px', textAlign: 'center' }}>
       <h1>{producto.nombre}</h1>
-      <img
+      <Image
         src={producto.imagen}
         alt={producto.nombre}
-        style={{ width: '300px', height: '300px', borderRadius: '8px' }}
+        width={300} // Ancho de la imagen
+        height={300} // Alto de la imagen
+        style={{ borderRadius: '8px' }}
       />
       <p>${producto.precioPorKilo} / kg</p>
       <div>
