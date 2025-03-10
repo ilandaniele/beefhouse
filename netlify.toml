@@ -7,6 +7,12 @@
   to = "/index.html"
   status = 200
 
+[build.environment]
+  NEXT_CACHE_DIR = ".next/cache"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [[headers]]
   for = "/*"
   [headers.values]
